@@ -14,6 +14,8 @@
   </head>
 
   <body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
+
     <nav class="navbar navbar-expand-lg sticky-top custom-bg">
       <div class="container">
         <a class="navbar-brand text-white fw-bold" href="#">Omar.dev</a>
@@ -28,7 +30,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
-          <ul class="navbar-nav nav-bar-list">
+          <ul class="navbar-nav nav-bar-list align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link text-white" href="#about">About</a>
             </li>
@@ -46,6 +48,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#contact-form">contact me</a>
+            </li>
+            <li class="nav-item">
+              <label
+                for="theme-toggle"
+                class="theme-toggle-label"
+                title="Toggle dark / light mode"
+                aria-label="Toggle dark / light mode"
+              ></label>
             </li>
           </ul>
         </div>
@@ -70,7 +80,11 @@
             </div>
 
             <div class="right">
-              <img class="image" src="assets/30485.jpg" alt="omar altoom image" />
+              <img
+                class="image"
+                src="assets/30485.jpg"
+                alt="omar altoom image"
+              />
             </div>
           </div>
         </div>
@@ -357,9 +371,9 @@
       <div class="container p-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Omar Al-toom</h5>
+            <h5 class="text-uppercase text-white">Omar Al-toom</h5>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="text-white col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
             <ul class="center list-unstyled mb-0">
               <li>
@@ -403,17 +417,17 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Contact</h5>
+            <h5 class="text-white text-uppercase text-white">Contact</h5>
             <ul class="list-unstyled mb-0">
-              <li>Jordan ,Amman</li>
-              <li>omar-altoom-ot@gmail.com</li>
-              <li>+962790022380</li>
+              <li class="text-white">Jordan ,Amman</li>
+              <li class="text-white">omar-altoom-ot@gmail.com</li>
+              <li class="text-white">+962790022380</li>
             </ul>
           </div>
         </div>
       </div>
       <div
-        class="text-center p-3"
+        class="text-center text-white p-3"
         style="background-color: rgba(0, 0, 0, 0.05)"
       >
         © 2026 Copyright <strong>Omar Altoom</strong>

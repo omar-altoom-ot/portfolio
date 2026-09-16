@@ -8,6 +8,7 @@ body {
   background: linear-gradient(to bottom right, #142b17, #142415);
   font-family: Arial, sans-serif;
   height: fit-content;
+  transition: background 0.4s ease;
 }
 
 .nav-bar-list li a:hover {
@@ -18,6 +19,7 @@ body {
 
 main {
   color: white;
+  transition: color 0.4s ease;
 }
 
 h1 {
@@ -47,6 +49,9 @@ section {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease;
 }
 
 #about,
@@ -560,4 +565,136 @@ section {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================================================
+   DARK / LIGHT MODE TOGGLE — CSS ONLY (no JavaScript)
+   Technique: hidden checkbox (#theme-toggle) as the first
+   child of <body>, driven purely by :checked + the general
+   sibling combinator (~) and :has().
+   ========================================================= */
+
+.theme-toggle-input {
+  display: none;
+}
+
+.theme-toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  font-size: 1.05rem;
+  line-height: 1;
+  margin: 6px 0;
+  transition:
+    background-color 0.3s,
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.theme-toggle-label:hover {
+  transform: scale(1.12);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.theme-toggle-label::before {
+  content: "🌙";
+}
+
+#theme-toggle:checked ~ nav .theme-toggle-label::before {
+  content: "☀️";
+}
+
+body:has(#theme-toggle:checked) {
+  background: linear-gradient(to bottom right, #eef6ee, #ffffff);
+}
+
+body:has(#theme-toggle:checked) main {
+  color: #16241a;
+}
+
+body:has(#theme-toggle:checked) footer {
+  color: #16241a;
+}
+
+#theme-toggle:checked ~ nav {
+  background: rgba(255, 255, 255, 0.65) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#theme-toggle:checked ~ nav .navbar-brand,
+#theme-toggle:checked ~ nav .nav-link,
+#theme-toggle:checked ~ nav .text-white {
+  color: #16241a !important;
+}
+
+#theme-toggle:checked ~ nav .nav-bar-list li a:hover {
+  border-color: #16241a;
+}
+
+#theme-toggle:checked ~ nav .theme-toggle-label {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+
+#theme-toggle:checked ~ nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+#theme-toggle:checked ~ main h3 {
+  color: #3d3d3d;
+}
+
+#theme-toggle:checked ~ main .card,
+#theme-toggle:checked ~ main .exp-card,
+#theme-toggle:checked ~ main .project-card,
+#theme-toggle:checked ~ main .edu-card,
+#theme-toggle:checked ~ main .achievement-pill,
+#theme-toggle:checked ~ main .card-form {
+  background-color: #f1f7f1;
+  color: #16241a;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#theme-toggle:checked ~ main .exp-bullets li,
+#theme-toggle:checked ~ main .project-desc,
+#theme-toggle:checked ~ main .edu-sub,
+#theme-toggle:checked ~ main .year-badge,
+#theme-toggle:checked ~ main .project-tags {
+  color: #3d3d3d;
+}
+
+#theme-toggle:checked ~ main .skills-capsule {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #16241a;
+}
+
+#theme-toggle:checked ~ main .year-badge,
+#theme-toggle:checked ~ main .gpa-badge {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle:checked ~ main .section-h1::after {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+#theme-toggle:checked ~ main .card-form input {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #16241a;
+}
+
+#theme-toggle:checked ~ main .card-form input::placeholder {
+  color: #9a9a9a;
+}
+
+#theme-toggle:checked ~ footer .text-white {
+  color: #000100 !important;
+}
+
+#theme-toggle:checked ~ footer .text-white {
+  color: #000100 !important;
 }
