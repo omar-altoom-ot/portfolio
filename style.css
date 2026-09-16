@@ -35,7 +35,6 @@ h3 {
   color: #2fbd33;
 }
 
-
 section {
   margin: 0 0 0 5px;
   min-height: 95vh;
@@ -52,7 +51,7 @@ section {
 
 #about,
 #skills,
-#experiance,
+#experience,
 #projects,
 #education,
 #contact-form {
@@ -554,5 +553,11 @@ section {
   .edu-card-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
