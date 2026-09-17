@@ -1,19 +1,19 @@
-# 🌐 Omar Altoom – Portfolio
+#  Omar Altoom – Portfolio
 
 Welcome to my personal portfolio website!
 This project showcases my work, skills, and progress as a front-end developer.
 
-## 🚀 Live Demo
+##  Live Demo
 
-👉 [View Live Website](https://omar-altoom-ot.github.io/protfolio/?utm_source=chatgpt.com)
+ [View Live Website](https://omar-altoom-ot.github.io/protfolio/?utm_source=chatgpt.com)
 
-## 🎨 Figma Design
+##  Figma Design
 
-👉 [View Figma Design](https://www.figma.com/design/9eMWUbmzkhqFS7ijHIb5e6/HTML-to-Figma--Community-?node-id=0-1&t=VFZNFDQNZCHogayC-1&utm_source=chatgpt.com)
+ [View Figma Design](https://www.figma.com/design/9eMWUbmzkhqFS7ijHIb5e6/HTML-to-Figma--Community-?node-id=0-1&t=VFZNFDQNZCHogayC-1&utm_source=chatgpt.com)
 
 ---
 
-## 📌 About The Project
+##  About The Project
 
 This portfolio was built to present:
 
@@ -26,7 +26,7 @@ The goal of this project is to practice **HTML, CSS, and layout design**, and to
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * HTML5
 * CSS3
@@ -35,7 +35,7 @@ The goal of this project is to practice **HTML, CSS, and layout design**, and to
 
 ---
 
-## 📂 Features
+##  Features
 
 * Responsive layout
 * Clean and simple UI
@@ -49,14 +49,14 @@ The goal of this project is to practice **HTML, CSS, and layout design**, and to
 
 ---
 
-## 📸 Preview
+##  Preview
 
 > Add screenshots here later
 > (You can upload images and link them like this: `![Preview](image.png)`)
 
 ---
 
-## 📥 Getting Started
+##  Getting Started
 
 To run this project locally:
 
@@ -69,7 +69,7 @@ Then open `index.html` in your browser.
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
 * How to convert a **Figma design into code**
 * Structuring a real website project
@@ -78,7 +78,7 @@ Then open `index.html` in your browser.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 Feel free to reach out or connect with me:
 
@@ -86,8 +86,8 @@ Feel free to reach out or connect with me:
 
 ---
 
-## ⭐ Support
+##  Support
 
-If you like this project, feel free to **star the repo** ⭐
+If you like this project, feel free to **star the repo** 
 
 ---
