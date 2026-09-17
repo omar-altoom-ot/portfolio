@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- CSS-only theme toggle: must stay as the FIRST child of <body> -->
     <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
 
     <nav class="navbar navbar-expand-lg sticky-top custom-bg">
@@ -36,19 +35,19 @@
               <a class="nav-link text-white" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#skills">Skills</a>
+              <a class="nav-link text-white" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
+              <a class="nav-link text-white" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#contact-form">contact me</a>
+              <a class="nav-link text-white" href="#contact-form">Contact me</a>
             </li>
             <li class="nav-item">
               <label
@@ -67,7 +66,7 @@
       <section class="hero">
         <div class="container-main">
           <div class="row-custom">
-            <div class="left">
+            <div class="left-hero">
               <h1>Hello!</h1>
 
               <h3>
@@ -80,7 +79,7 @@
               <button class="btn-main">Get in touch</button>
             </div>
 
-            <div class="right">
+            <div class="right-hero">
               <img
                 class="image"
                 src="assets/30485.jpg"
@@ -92,86 +91,96 @@
       </section>
 
       <section id="about">
-        <div class="container-second-section">
+        <div class="about-content">
           <h1 class="h1-second-section section-h1">
             <span class="section-num">01</span> About
           </h1>
-
-          <div class="left-second-section">
-            I'm a Software Engineering graduate (JUST, 2025) who likes finishing
-            what I start — from a full veterinary hospital platform built with a
-            team, to a solo tool that scrapes and exports restaurant menus. Most
-            of my recent work sits in the .NET / React world: ASP.NET Core APIs,
-            Entity Framework, SQL Server, and React front ends that actually
-            feel responsive. Before that, I spent time in Arduino hardware and
-            Unity game development, which is probably why I care about how
-            things behave, not just how they look. I'm currently looking for a
-            Software Engineering internship or a Junior .NET Developer role
-            where I can keep building real things with a real team.
-          </div>
-          <div class="right-second-section">
-            <table class="info-table">
-              <tr>
-                <td><strong>Location</strong></td>
-                <td>Amman, Jordan</td>
-              </tr>
-              <tr>
-                <td><strong>Degree</strong></td>
-                <td>B.Sc. Software Engineering</td>
-              </tr>
-              <tr>
-                <td><strong>University</strong></td>
-                <td>JUST · 2025 · GPA 3.5/4.0</td>
-              </tr>
-              <tr>
-                <td><strong>Focus</strong></td>
-                <td>ASP.NET Core · React · SQL</td>
-              </tr>
-              <tr>
-                <td><strong>Status</strong></td>
-                <td>Open to internships</td>
-              </tr>
-            </table>
+          <div class="container-second-section glowing center">
+            <div class="left-second-section">
+              I'm a Software Engineering graduate (JUST, 2025) who likes
+              finishing what I start — from a full veterinary hospital platform
+              built with a team, to a solo tool that scrapes and exports
+              restaurant menus. Most of my recent work sits in the .NET / React
+              world: ASP.NET Core APIs, Entity Framework, SQL Server, and React
+              front ends that actually feel responsive. Before that, I spent
+              time in Arduino hardware and Unity game development, which is
+              probably why I care about how things behave, not just how they
+              look. I'm currently looking for a Software Engineering internship
+              or a Junior .NET Developer role where I can keep building real
+              things with a real team.
+            </div>
+            <div class="right-second-section">
+              <table class="info-table">
+                <tr>
+                  <td><strong>Location</strong></td>
+                  <td>Amman, Jordan</td>
+                </tr>
+                <tr>
+                  <td><strong>Degree</strong></td>
+                  <td>B.Sc. Software Engineering</td>
+                </tr>
+                <tr>
+                  <td><strong>University</strong></td>
+                  <td>JUST · 2025 · GPA 3.5/4.0</td>
+                </tr>
+                <tr>
+                  <td><strong>Focus</strong></td>
+                  <td>ASP.NET Core · React · SQL</td>
+                </tr>
+                <tr>
+                  <td><strong>Status</strong></td>
+                  <td>Open to internships</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="skills-section" id="skills">
-        <div class="contaoner-skills">
-          <h1 class="skills-h1 section-h1">
-            <span class="section-num">02</span> Skills
+      <section class="projects-section" id="projects">
+        <div class="section-container">
+          <h1 class="section-h1">
+            <span class="section-num">04</span> Projects
           </h1>
-          <div class="all-skills">
-            <div class="skills-capsule glowing">C#</div>
-            <div class="skills-capsule glowing">ASP .NET Core</div>
-            <div class="skills-capsule glowing">Entity FrameWork</div>
-            <div class="skills-capsule glowing">SQL Server</div>
-            <div class="skills-capsule glowing">React</div>
-            <div class="skills-capsule glowing">JavaScript</div>
-            <div class="skills-capsule glowing">HTML & CSS</div>
-            <div class="skills-capsule glowing">Rest APIs</div>
-            <div class="skills-capsule glowing">Unity & C#</div>
-            <div class="skills-capsule glowing">Arduino</div>
-            <div class="skills-capsule glowing">Git</div>
-            <div class="skills-capsule glowing">
-              OOP & Software Architecture
+
+          <div class="projects-grid">
+            <div class="project-card glowing project-featured">
+              <span class="project-year">2025</span>
+              <h3 class="project-title">
+                University Veterinary Hospital Platform
+              </h3>
+              <p class="project-tags">
+                Full-Stack Graduation Project · C# · .NET · React · Flutter
+              </p>
+              <p class="project-desc">
+                A full web and mobile system for a university veterinary
+                hospital, handling appointments, patient records and
+                administrative workflows. Led the React front-end build and
+                worked closely with the team to keep integration and performance
+                solid across every module.
+              </p>
+              <a href="#" class="project-link">View on GitHub →</a>
             </div>
-          </div>
-          <div class="cards-skills">
-            <div class="card glowing">
-              <h6 style="color: #2fbd33">// WEB</h6>
-              <strong>Full-stack development</strong>
-              Building CRUD systems, auth flows and data-driven UIs end to end.
+
+            <div class="project-card glowing">
+              <span class="project-year">2025</span>
+              <h3 class="project-title">Menu Scraper Tool</h3>
+              <p class="project-tags">Web App · React · TypeScript</p>
+              <p class="project-desc">
+                Scrapes restaurant menu data and organizes it for export to
+                Excel, streamlining menu digitization and analysis.
+              </p>
+              <a href="#" class="project-link">View on GitHub →</a>
             </div>
-            <div class="card glowing">
-              <h6 style="color: #2fbd33">// HARDWARE</h6>
-              <strong>Arduino & robotics</strong>
-              Hands-on training in embedded logic and hardware programming.
-            </div>
-            <div class="card glowing">
-              <h6 style="color: #2fbd33">// CRAFT</h6>
-              <strong>Team collaboration</strong>
-              Comfortable working across product, design and backend teammates.
+
+            <div class="project-card glowing">
+              <span class="project-year">2024</span>
+              <h3 class="project-title">3D Car Game</h3>
+              <p class="project-tags">Game Dev · Unity · C#</p>
+              <p class="project-desc">
+                A team-built 3D racing game focused on gameplay mechanics,
+                smooth controls and an interactive, playable environment.
+              </p>
             </div>
           </div>
         </div>
@@ -245,50 +254,42 @@
         </div>
       </section>
 
-      <section class="projects-section" id="projects">
-        <div class="section-container">
-          <h1 class="section-h1">
-            <span class="section-num">04</span> Projects
+      <section class="skills-section" id="skills">
+        <div class="container-skills">
+          <h1 class="skills-h1 section-h1">
+            <span class="section-num">02</span> Skills
           </h1>
-
-          <div class="projects-grid">
-            <div class="project-card glowing project-featured">
-              <span class="project-year">2025</span>
-              <h3 class="project-title">
-                University Veterinary Hospital Platform
-              </h3>
-              <p class="project-tags">
-                Full-Stack Graduation Project · C# · .NET · React · Flutter
-              </p>
-              <p class="project-desc">
-                A full web and mobile system for a university veterinary
-                hospital, handling appointments, patient records and
-                administrative workflows. Led the React front-end build and
-                worked closely with the team to keep integration and performance
-                solid across every module.
-              </p>
-              <a href="#" class="project-link">View on GitHub →</a>
+          <div class="all-skills">
+            <div class="skills-capsule glowing">C#</div>
+            <div class="skills-capsule glowing">ASP .NET Core</div>
+            <div class="skills-capsule glowing">Entity FrameWork</div>
+            <div class="skills-capsule glowing">SQL Server</div>
+            <div class="skills-capsule glowing">React</div>
+            <div class="skills-capsule glowing">JavaScript</div>
+            <div class="skills-capsule glowing">HTML & CSS</div>
+            <div class="skills-capsule glowing">Rest APIs</div>
+            <div class="skills-capsule glowing">Unity</div>
+            <div class="skills-capsule glowing">Arduino</div>
+            <div class="skills-capsule glowing">Git</div>
+            <div class="skills-capsule glowing">
+              OOP & Software Architecture
             </div>
-
-            <div class="project-card glowing">
-              <span class="project-year">2025</span>
-              <h3 class="project-title">Menu Scraper Tool</h3>
-              <p class="project-tags">Web App · React · TypeScript</p>
-              <p class="project-desc">
-                Scrapes restaurant menu data and organizes it for export to
-                Excel, streamlining menu digitization and analysis.
-              </p>
-              <a href="#" class="project-link">View on GitHub →</a>
+          </div>
+          <div class="cards-skills">
+            <div class="card glowing">
+              <h6 style="color: #2fbd33">// WEB</h6>
+              <strong>Full-stack development</strong>
+              Building CRUD systems, auth flows and data-driven UIs end to end.
             </div>
-
-            <div class="project-card glowing">
-              <span class="project-year">2024</span>
-              <h3 class="project-title">3D Car Game</h3>
-              <p class="project-tags">Game Dev · Unity · C#</p>
-              <p class="project-desc">
-                A team-built 3D racing game focused on gameplay mechanics,
-                smooth controls and an interactive, playable environment.
-              </p>
+            <div class="card glowing">
+              <h6 style="color: #2fbd33">// HARDWARE</h6>
+              <strong>Arduino & robotics</strong>
+              Hands-on training in embedded logic and hardware programming.
+            </div>
+            <div class="card glowing">
+              <h6 style="color: #2fbd33">// CRAFT</h6>
+              <strong>Team collaboration</strong>
+              Comfortable working across product, design and backend teammates.
             </div>
           </div>
         </div>
@@ -372,7 +373,7 @@
       <div class="container p-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase text-white">Omar Al-toom</h5>
+            <h5 class="text-uppercase text-white">Omar.dev</h5>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase text-white">Links</h5>

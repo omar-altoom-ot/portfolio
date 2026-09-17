@@ -8,18 +8,16 @@ body {
   background: linear-gradient(to bottom right, #142b17, #142415);
   font-family: Arial, sans-serif;
   height: fit-content;
-  transition: background 0.4s ease;
 }
 
 .nav-bar-list li a:hover {
-  border: #fbfbfb solid 2px;
+  border: #0e6a03 solid 2px;
   padding: 4px;
   border-radius: 10px;
 }
 
 main {
   color: white;
-  transition: color 0.4s ease;
 }
 
 h1 {
@@ -69,11 +67,11 @@ section {
   margin: auto;
 }
 
-.hero {
+/*.hero {
   min-height: 90vh;
   display: flex;
   align-items: center;
-}
+}*/
 
 .row-custom {
   display: flex;
@@ -81,24 +79,24 @@ section {
   justify-content: space-between;
   gap: 40px;
 }
-
-.left {
+/*
+.left-hero {
   flex: 1;
 }
 
-.right {
+.right-hero {
   flex: 1;
   display: flex;
   justify-content: center;
-}
+}*/
 
 .image {
   width: 100%;
   max-width: 400px;
-  filter: drop-shadow(0 0 6px #2fbd33) drop-shadow(0 0 14px #2fbd33)
-    drop-shadow(0 0 22px #2fbd33);
+
   animation: rainbow-border 4s linear infinite;
 }
+
 @keyframes rainbow-border {
   0% {
     filter: drop-shadow(0 0 6px #2fbd33) drop-shadow(0 0 14px #2fbd33)
@@ -123,7 +121,7 @@ section {
 }
 
 .btn-main {
-  border: #ffffff;
+  border: #09730d;
   background-color: #09730d;
   color: #ffffff;
   border-radius: 10px;
@@ -135,7 +133,7 @@ section {
   transform: scale(1.1);
   background-color: #2fbd33;
   color: #fbfbfb;
-  transition: transform 5s;
+  transition: transform 2s;
 }
 
 .container-second-section {
@@ -146,11 +144,14 @@ section {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .h1-second-section {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  margin: 5%;
 }
 
 .left-second-section {
@@ -173,7 +174,7 @@ section {
   justify-content: center;
 }
 
-.contaoner-skills {
+.container-skills {
   width: 90%;
   max-width: 1100px;
   margin: auto;
@@ -219,6 +220,8 @@ section {
 }
 
 .experience-section,
+.projects-section,
+.education-section,
 .projects-section,
 .education-section {
   flex-direction: column;
@@ -498,6 +501,16 @@ section {
   background-color: #2fbd33;
 }
 
+.info-table tr td strong {
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.about-content {
+  display: grid;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .row-custom {
     flex-direction: column;
@@ -566,13 +579,6 @@ section {
     grid-template-columns: 1fr;
   }
 }
-
-/* =========================================================
-   DARK / LIGHT MODE TOGGLE — CSS ONLY (no JavaScript)
-   Technique: hidden checkbox (#theme-toggle) as the first
-   child of <body>, driven purely by :checked + the general
-   sibling combinator (~) and :has().
-   ========================================================= */
 
 .theme-toggle-input {
   display: none;
