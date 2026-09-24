@@ -93,30 +93,30 @@ section {
 .image {
   width: 100%;
   max-width: 400px;
-
+  border-radius: 20px;
   animation: rainbow-border 4s linear infinite;
 }
 
 @keyframes rainbow-border {
   0% {
     filter: drop-shadow(0 0 6px #2fbd33) drop-shadow(0 0 14px #2fbd33)
-      drop-shadow(0 0 22px #2fbd33);
+      drop-shadow(0 0 30px #2fbd33);
   }
   25% {
-    filter: drop-shadow(0 0 6px #7ed321) drop-shadow(0 0 14px #7ed321)
-      drop-shadow(0 0 22px #7ed321);
+    filter: drop-shadow(0 0 6px #8cec26) drop-shadow(0 0 14px #7ed321)
+      drop-shadow(0 0 30px #8cec26);
   }
   50% {
-    filter: drop-shadow(0 0 6px #6dad27) drop-shadow(0 0 14px #7ed321)
-      drop-shadow(0 0 22px #6dad27);
+    filter: drop-shadow(0 0 6px #79b637) drop-shadow(0 0 14px #7ed321)
+      drop-shadow(0 0 30px #79b637);
   }
   75% {
-    filter: drop-shadow(0 0 6px #7ed321) drop-shadow(0 0 14px #7ed321)
-      drop-shadow(0 0 22px #7ed321);
+    filter: drop-shadow(0 0 6px #7cb441) drop-shadow(0 0 14px #7ed321)
+      drop-shadow(0 0 30px #7cb441);
   }
   100% {
-    filter: drop-shadow(0 0 6px #2fbd33) drop-shadow(0 0 14px #2fbd33)
-      drop-shadow(0 0 22px #2fbd33);
+    filter: drop-shadow(0 0 6px #55bd58) drop-shadow(0 0 14px #2fbd33)
+      drop-shadow(0 0 30px #55bd58);
   }
 }
 
@@ -511,6 +511,15 @@ section {
   width: 100%;
 }
 
+
+footer{
+  background-color: #0d1a0f;
+}
+
+.edited_color {
+  color: rgb(47, 189, 51);
+}
+
 @media (max-width: 768px) {
   .row-custom {
     flex-direction: column;
@@ -541,6 +550,12 @@ section {
     grid-row: 2 / 3;
     height: fit-content;
     padding: 0 10px;
+  }
+
+  .info-table tr td strong {
+    color: #2fbd33;
+    padding: 0;
+    margin: 0;
   }
 
   .right-second-section {
